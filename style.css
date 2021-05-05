@@ -1,0 +1,336 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-color: white;
+	overflow-y: overlay;
+}
+
+body::-webkit-scrollbar{
+	width: 10px;
+	opacity: 0;
+}
+
+body::-webkit-scrollbar-track{
+	background: rgb(0, 0, 0, 0.0);
+	color: red;
+}	
+
+body::-webkit-scrollbar-thumb{
+  	background: rgb(24, 31, 35, 0.0);
+  	border-radius: 50px;       /* roundness of the scroll thumb */
+	padding-right: 5px;
+  	border: 10px ;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  	background: rgb(24, 31, 35, 1.0);
+}
+
+a{
+	text-decoration: none;
+	color: black; 
+	transition: 0.3s;
+}
+
+a:visited{
+	text-decoration: none; 
+	color: black; 
+}
+
+a:hover{
+	text-decoration: none; 
+	color: grey; 
+}
+
+a:focus{
+	text-decoration: none; 
+	color: black; 
+}
+
+a:hover, a:active{
+	text-decoration: none; 
+	color: grey;
+}
+
+img{
+	transition: 0.5s;
+}
+
+img:hover {
+	filter: opacity(0.5);
+}
+
+/* [Poster Section] Starts HERE*/
+
+.section-poster{
+	width: 100%;
+	height: 80vh;
+	background-color: #EEEFF7;
+}
+
+/* Taskbar Formatting */
+
+#taskbar{
+	z-index: 100;
+	position: fixed;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8px;
+	width: 100vw;
+    height: 50px;
+	background-color: rgba(255, 255, 255, 1.0);
+	transition: 0.5s;
+}
+
+/* Taskbar Elements Formatting */
+
+#taskbar-logo{
+	float: left;
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: 1vw;
+	height: 100px;
+	width: 100px;
+}
+
+#taskbar-about{
+	float: right;
+	color: white;
+	display: inline-block;
+	margin: 3px 3vw auto 0vw;
+	height: 65px;
+	width: fit-content;
+}
+
+#taskbar-experience{
+	float: right;
+	display: inline-block;
+	margin: 3px 3vw auto 0vw;
+	height: 65px;
+	width: fit-content; 
+}
+
+#taskbar-portfolio{
+	float: right;
+	display: inline-block;
+	margin: 3px 2vw auto 0vw;
+	height: 65px;
+	width: fit-content;
+}
+
+/* [Poster Section] Ends HERE */
+
+
+
+/* [About ME Section] Starts HERE */
+
+#section-about{
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	background-image: url("material/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#section-about-box{
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	position: fixed;
+	top: 20vh;
+	left: 10vw;
+}
+
+
+#section-about-box h1{
+	font-size: 5vw;
+	margin: 0;
+}
+
+#section-about-box h2{
+	position: fixed;
+	font-size: 2vw;
+	margin: 0;
+	top: 75vh;
+	right: 10vw;
+	text-aligh: right;
+}
+
+
+#section-about input[type="text"], 
+#section-about input[type="text"]:focus{
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	display: inline-block;
+	width: 60vw;
+	font-size: 8vw;
+	background: transparent;
+	border-color: white;
+    border-width: 0 0 10px;
+	outline-width: 0;
+}
+
+#status-bar{
+	z-index: 99;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+}
+
+.block{
+	font-family: 'Roboto Mono', monospace;
+	text-align: right;
+	position: fixed;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #B54A37;
+	border-radius: 5px;
+}
+
+#status-block1{
+
+}
+
+#block1{
+	opacity: 0;
+	transition: 1s;
+}
+
+
+
+#status-block2{
+
+}
+
+#block2{
+	opacity: 0;
+	transition: 1s;
+}
+
+#status-block3{
+
+}
+
+#block3{
+	opacity: 0;
+	transition: 1s;
+}
+
+#status-block4{
+
+}
+
+#block4{
+	opacity: 0;
+	transition: 1s;
+}
+
+#status-block5{
+	
+}
+
+#block5{
+	opacity: 0;
+	transition: 1s;
+}
+
+
+/* [Introduction Section] Ends HERE */
+/* [Portfolio Section] Starts HERE */
+
+#section-portfolio{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background-color: #00121a;
+}
+
+#section-portfolio-box{
+	position: relative;
+	top: calc(50% - 100px);
+	width: fit-content;
+	height: 200px;
+	margin: auto;
+	border: 2px solid white;
+	
+}
+
+#name{
+	position: relative;
+	font-family: 'Ubuntu';
+	font-weight: 200;
+	font-size: 150px;
+	color: #39B0E3;
+	margin: 0;
+}
+
+#description{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+	color: white;
+	position: relative;
+	margin: 0;
+}
+
+#section-skills{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: auto;
+	padding: 5vw 0 2vw 0;
+	background-color: #1D4D61;
+}
+
+#section-experiences{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+}
+
+#section-contact{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: red;
+}
+
+
+@media only screen and (max-width: 600px) {
+  	#section-about-box h1{
+		font-size: 8vw;
+		margin-bottom: 2vh;
+	}
+	
+	#section-about-box h2{
+		font-size: 5vw; 
+		top: 40vh;
+	}
+	
+	#section-about input[type="text"], 
+	#section-about input[type="text"]:focus{
+		width: 80vw;
+   		border-width: 0 0 5px;
+	}
+	
+	#section-portfolio-box{
+		height: 100px;
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	
+	#name{
+		font-size: 50px;
+	}
+}
+

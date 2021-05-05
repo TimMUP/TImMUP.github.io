@@ -3,11 +3,91 @@
 <head>
 	<meta charset="utf-8">
 	<title>Personal Website</title>
-	<style>
-		
-	</style>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/lib/anime.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<div id="taskbar">
+		<div id="taskbar-logo">
+			<a href="#section-about">
+				<img src="material/Logo.png" alt="Tim Yang Logo" height="45">
+			</a>
+		</div>
+		<div id="taskbar-portfolio">
+			<a href="#section-experiences"><h1>Experiences</h1></a>
+		</div>
+		<div id="taskbar-experience">
+			<a href="#section-skills"><h1>Skills</h1></a>
+		</div>
+		<div id="taskbar-about">
+			<a href="#section-portfolio"><h1>Portfolio</h1></a>
+		</div>
+	</div>
+	
+	<div id="status-bar">
+		<div class="block" id="status-block1">
+			<a href="https://www.instagram.com/Tim.MUP/" target="_blank">
+				<img id="block1" src="material/insta.png" alt="Instagram" height="30">
+			</a>
+		</div>
+		<div class="block" id="status-block2">
+			<a href="https://github.com/TimMUP" target="_blank">
+				<img id="block2" src="material/github.png" alt="Github" height="30">
+			</a>
+		</div>
+		<div class="block" id="status-block3">
+			<a href="https://www.linkedin.com/in/tim-yang-514145199/" target="_blank">
+				<img id="block3" src="material/linkedin.png" alt="LinkedIn" height="30">
+			</a>
+		</div>
+		<div class="block" id="status-block4">
+			<a href="mailto:thryang@outlook.com">
+				<img id="block4" src="material/email.png" alt="Email" height="30">
+			</a>
+		</div>
+		<div class="block" id="status-block5">
+			<a href="file/resume.pdf" target="_blank">
+				<img id="block5" src="material/resume.png" alt="General Resume" height="30">
+			</a>
+		</div>
+	</div>
+	
+	<div id="section-about">
+		<div id="section-about-box">
+			<h1>Good Afternoon,</h1>
+			<input type="text" maxlength="12">
+			<h2 style="float: right;">Hello, my name is Tim!</h2>
+		</div>
+		
+	</div>
+	
+	<div id="section-portfolio">
+		<div id="section-portfolio-box">
+			<h1 id="name">TIM YANG</h1>
+			<h1 id="description">Digital Creator, Web Designer, Full Stack Programmer, Problem Solver</h1>
+		</div>
+		
+	</div>
+	
+	<div id="section-skills">
+		<div id="coding-skills"></div>
+		<div id="creative-skills"></div>
+	</div>
+	
+	<div id="section-experiences">
+		
+	</div>
+	
+	<div id="section-contact">
+		
+	</div>
 </body>
 </html>
