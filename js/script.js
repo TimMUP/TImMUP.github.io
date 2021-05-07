@@ -87,23 +87,17 @@ function getPortfolio() {
 
 $(document).ready(function(){
 	ScrollReveal().reveal("#section-portfolio-box", { delay: 500}, { duration: 1000 }, { cleanup: true });
+	ScrollReveal().reveal(".skills-box", { delay: 500}, { duration: 1000 }, { cleanup: true });
 	var portfolioDist = $("#section-portfolio").offset().top;
-	var skillsDist = $("#section-skills").offset().top;
-	var experiencesDist = $("#section-experiences").offset().top;
 	console.log(portfolioDist);
-	console.log(skillsDist);
-	console.log(experiencesDist);
 	$(window).on("resize", function(){
 		portfolioDist = $("#section-portfolio").offset().top;
-		skillsDist = $("#section-skills").offset().top;
 		experiencesDist = $("#section-experiences").offset().top;
 	});
 	var hour = new Date().getHours();
 	var original = true;
 	var expanded = false;
 	var portfolio = false;
-	var skills = false;
-	var experiences = false;
 	if (0 <= hour && hour < 12) {
 		$("#section-about-box h1").text("Good Morning,");
 	} else if (12 <= hour && hour < 18) {
@@ -119,13 +113,7 @@ $(document).ready(function(){
 		} else {
 			$("#taskbar").css("background", "rgba(255, 255, 255, 0.0)");
 		}
-		if ($(window).scrollTop() >= portfolioDist - 100 && $(window).scrollTop() < skillsDist - 100) {
-			if (portfolio == false) {
-				getPortfolio();
-			}
-			portfolio = true;
-			original = false;
-		} else if ($(window).scrollTop() >= skillsDist - 100 && $(window).scrollTop() < experiencesDist - 100) {
+		if ($(window).scrollTop() >= portfolioDist - 100) {
 			if (portfolio == false) {
 				getPortfolio();
 			}
@@ -140,8 +128,6 @@ $(document).ready(function(){
 				getExpanded();
 			}
 			portfolio = false;
-			skills = false;
-			experiences = false;
 		}
 	});
 	$("#section-about-box input").on('input', function(){
