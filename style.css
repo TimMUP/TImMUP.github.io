@@ -195,7 +195,7 @@ img:hover {
 	display: block;
 	width: 30px;
 	height: 30px;
-	background-color: #B54A37;
+	background-color: white;
 	border-radius: 5px;
 }
 
@@ -504,7 +504,7 @@ img:hover {
 	.experience-text{
 		position: relative;
 		text-align: left;
-		width: 100%;
+		width: 90%;
 		padding: 10px;
 	}
 		

@@ -1,0 +1,273 @@
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-color: white;
+	overflow-y: overlay;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+	width: 10px;
+	opacity: 0;
+}
+
+body::-webkit-scrollbar-track{
+	background: rgb(0, 0, 0, 0.0);
+	color: red;
+}	
+
+body::-webkit-scrollbar-thumb{
+  	background: rgb(24, 31, 35, 0.0);
+  	border-radius: 50px;       /* roundness of the scroll thumb */
+	padding-right: 5px;
+  	border: 10px ;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  	background: rgb(24, 31, 35, 1.0);
+}
+
+a{
+	text-decoration: none;
+	color: black; 
+	transition: 0.3s;
+}
+
+a:visited{
+	text-decoration: none; 
+	color: black; 
+}
+
+a:hover{
+	text-decoration: none; 
+	color: grey; 
+}
+
+a:focus{
+	text-decoration: none; 
+	color: black; 
+}
+
+a:hover, a:active{
+	text-decoration: none; 
+	color: grey;
+}
+
+img{
+	transition: 0.5s;
+}
+
+img:hover {
+	filter: opacity(0.5);
+}
+
+/* [Poster Section] Starts HERE*/
+
+.section-poster{
+	width: 100%;
+	height: 80vh;
+	background-color: #EEEFF7;
+}
+
+/* Taskbar Formatting */
+
+#taskbar{
+	z-index: 100;
+	position: fixed;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8px;
+	width: 100vw;
+    height: 50px;
+	background-color: rgba(255, 255, 255, 1.0);
+	transition: 0.5s;
+	font-weight: 300;
+}
+
+/* Taskbar Elements Formatting */
+
+#taskbar-logo{
+	float: left;
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: 1vw;
+	height: 100px;
+	width: 100px;
+}
+
+#taskbar-contact{
+	float: right;
+	color: white;
+	display: inline-block;
+	margin: 3px 3vw auto 0vw;
+	height: 65px;
+	width: fit-content;
+}
+
+#taskbar-experience{
+	float: right;
+	display: inline-block;
+	margin: 3px 3vw auto 0vw;
+	height: 65px;
+	width: fit-content; 
+}
+
+#taskbar-portfolio{
+	float: right;
+	display: inline-block;
+	margin: 3px 2vw auto 0vw;
+	height: 65px;
+	width: fit-content;
+}
+
+#section-experiences{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	padding: 100px 0 100px 0;
+	background-color: #346B82;
+	text-align: center;
+}
+
+#section-experiences h1{
+	position: absolute;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0;
+	color: white;
+}
+
+#section-experiences h2{
+	padding-top: 50px;
+	position: absolute;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0;
+	font-size: 14px;
+	color: darkgrey;
+}
+
+#section-experiences-box{
+	position: relative;
+	width: auto;
+	margin: auto;
+}
+
+.experience-text{
+	position: relative;
+	text-align: left;
+	width: 100%;
+	padding: 10px;
+}
+
+.experience-box{
+	display: inline-block;
+	width: 350px;
+	height: 350px;
+	margin: 20px;
+}
+
+.experience-img {
+	border-radius: 10px;
+	width: 350px;
+}
+
+#past-projects{
+	position: relative;
+	width: auto;
+	margin: auto;
+}
+
+#past-projects-box{
+	display: inline-block;
+	width: fit-content;
+	height: auto;
+	margin: 20px;
+}
+
+#past-projects h1{
+	position: relative;
+	top: 0;
+	font-size: 20px;
+	color: cadetblue;
+}
+
+
+#section-contact{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #F0A560;
+	text-align: center;
+	padding: 50px 0px 100px 0px;
+}
+
+#section-contact-box1{
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	margin: 0px 50px 0px 50px;
+}
+
+#section-contact h1{
+	position: absolute;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+#section-contact-box2{
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	margin: 0px 50px 0px 50px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	html{
+		overflow-x: hidden;
+	}
+	
+	#section-experiences{
+		padding: 80px 0px 10px 0px;
+	}
+	
+	#section-experiences h1{
+		position: relative;
+		font-size: 20px;
+	}
+	
+	#section-experiences h2{
+		padding-top: 5px;
+		position: relative;
+		font-size: 12px;
+	}
+	
+	.experience-text{
+		position: relative;
+		text-align: left;
+		width: 90%;
+		padding: 10px;
+	}
+		
+	.experience-box{
+		width: 80vw;
+		height: auto;
+	}
+	
+	.experience-img{
+		position: relative;
+		width: 80vw;
+	}
+}
+

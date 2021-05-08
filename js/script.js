@@ -1,5 +1,5 @@
 function getOriginal() {
-	$(".block").css("background-color", "#B54A37");
+	$(".block").css("background-color", "white");
 	$("#block1").css("opacity", "0.0");
 	$("#block2").css("opacity", "0.0");
 	$("#block3").css("opacity", "0.0");
@@ -28,7 +28,7 @@ function getOriginal() {
 }
 
 function getExpanded() {
-	$(".block").css("background-color", "#B54A37");
+	$(".block").css("background-color", "white");
 	$("#block1").css("opacity", "0.0");
 	$("#block2").css("opacity", "0.0");
 	$("#block3").css("opacity", "0.0");
@@ -86,8 +86,8 @@ function getPortfolio() {
 }
 
 $(document).ready(function(){
-	ScrollReveal().reveal("#section-portfolio-box", { delay: 500}, { duration: 1000 }, { cleanup: true });
-	ScrollReveal().reveal(".skills-box", { delay: 500}, { duration: 1000 }, { cleanup: true });
+	ScrollReveal().reveal("#section-portfolio-box", { delay: 200}, { duration: 1000 }, { cleanup: true });
+	ScrollReveal().reveal(".skills-box", { delay: 200}, { duration: 1000 }, { cleanup: true });
 	var portfolioDist = $("#section-portfolio").offset().top;
 	console.log(portfolioDist);
 	$(window).on("resize", function(){
