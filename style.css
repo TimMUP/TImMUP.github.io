@@ -100,7 +100,7 @@ img:hover {
 	width: 100px;
 }
 
-#taskbar-about{
+#taskbar-contact{
 	float: right;
 	color: white;
 	display: inline-block;
@@ -260,11 +260,12 @@ img:hover {
 }
 
 #section-portfolio-box{
-	position: relative;
-	top: calc(50% - 100px);
+	position: absolute;
+	display: inline-block;
+	left: calc(50% - 400px);
+	top: calc(50% - 125px);
 	width: 800px;
 	height: 250px;
-	margin: auto;
 }
 
 #name{
@@ -448,16 +449,13 @@ img:hover {
    		border-width: 0 0 5px;
 	}
 	
-	#section-portfolio{
-		text-align: left;
-	}
-	
 	#section-portfolio-box{
 		height: 180px;
 		width: 600px;
-		left: 10px;
 		-webkit-transform: rotate(-90deg);
 		transform: rotate(-90deg);
+		left: calc(50% - 300px);
+		top: calc(50% - 90px);
 	}
 	
 	#name{
@@ -469,7 +467,38 @@ img:hover {
 	}
 	
 	#status-bar{
-		display: hidden;
+		display: none;
+	}
+	
+	#taskbar-portfolio, #taskbar-experience, #taskbar-contact{
+		display: none;
+	}
+	
+	#section-contact-box1, #section-contact-box2{
+		text-align: center;
+		width: 80vw;
+	}
+	
+	.section-skills-box h1{
+		font-size: 30px;
+		color: white;
+		margin: 0;
+	}
+
+	.section-skills-box h2{
+		font-size: 20px;
+		color: grey;
+		margin: 0;
+	}
+	
+	.skills-box{
+		height: 100px;
+		width: 300px;
+		margin: 0px;
+	}
+	
+	.section-skills{
+		padding: 50px 0px 50px 0px;
 	}
 }
 
