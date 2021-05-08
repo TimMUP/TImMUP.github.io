@@ -1,3 +1,5 @@
+
+
 html{
 	scroll-behavior: smooth;
 }
@@ -426,7 +428,10 @@ img:hover {
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+	html{
+		overflow-x: hidden;
+	}
   	#section-about-box h1{
 		font-size: 8vw;
 		margin-bottom: 2vh;
@@ -461,6 +466,10 @@ img:hover {
 	
 	#description{
 		font-size: 12px;
+	}
+	
+	#status-bar{
+		display: hidden;
 	}
 }
 
