@@ -263,7 +263,6 @@ img:hover {
 	width: 800px;
 	height: 250px;
 	margin: auto;
-	border: 2px solid white;
 }
 
 #name{
@@ -454,7 +453,6 @@ img:hover {
 		left: 10px;
 		-webkit-transform: rotate(-90deg);
 		transform: rotate(-90deg);
-		border: 2px solid white;
 	}
 	
 	#name{
