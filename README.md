@@ -1,2 +1,2 @@
 # thryang
-Personal Website for Employers.
+Personal Website of Tim (Hao Ran) Yang
