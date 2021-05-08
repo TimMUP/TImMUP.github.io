@@ -366,11 +366,23 @@ img:hover {
 	margin: auto;
 }
 
+.experience-text{
+	position: relative;
+	text-align: left;
+	width: 100%;
+	padding: 10px;
+}
+
 .experience-box{
 	display: inline-block;
 	width: 350px;
 	height: 350px;
 	margin: 20px;
+}
+
+.experience-img {
+	border-radius: 10px;
+	width: 350px;
 }
 
 #past-projects{
@@ -472,6 +484,51 @@ img:hover {
 	
 	#taskbar-portfolio, #taskbar-experience, #taskbar-contact{
 		display: none;
+	}
+	
+	#section-experiences{
+		padding: 10px 0px 10px 0px;
+	}
+	
+	#section-experiences h1{
+		position: relative;
+		font-size: 20px;
+	}
+	
+	#section-experiences h2{
+		padding-top: 5px;
+		position: relative;
+		font-size: 12px;
+	}
+	
+	.experience-text{
+		position: relative;
+		text-align: left;
+		width: 100%;
+		padding: 10px;
+	}
+		
+	.experience-box{
+		width: 80vw;
+		height: auto;
+	}
+	
+	.experience-img{
+		position: relative;
+		width: 80vw;
+	}
+	
+	#past-projects h1{
+		font-size: 20px;
+	}
+	
+	#section-contact{
+		position: relative;
+		width: 100%;
+		height: 120px;
+		background-color: #F0A560;
+		text-align: center;
+		padding: 50px 0px 100px 0px;
 	}
 	
 	#section-contact-box1, #section-contact-box2{
