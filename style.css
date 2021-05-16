@@ -486,6 +486,18 @@ img:hover {
 		display: none;
 	}
 	
+	@media screen and (orientation:landscape) {
+		#section-portfolio{
+			display: none;
+		}
+		
+		#section-about-box h2{
+			height: 20px;
+			top: 80vh;
+			right: 10px;
+		}
+	}
+	
 	#section-experiences{
 		padding: 10px 0px 10px 0px;
 	}
