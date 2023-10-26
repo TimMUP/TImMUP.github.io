@@ -1,2 +1,2 @@
-# thryang
-Personal Website of Tim (Hao Ran) Yang
+# TimMUP.github.io (Deprecated)
+Personal (Creative) Website for Tim Yang.
